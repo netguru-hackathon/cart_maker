@@ -15,8 +15,6 @@ group :development do
   gem 'spring'
 end
 gem 'devise'
-gem 'better_errors'
-gem 'quiet_assets'
 gem 'bullet'
 gem 'pry-rails'
 gem 'capybara'
@@ -24,7 +22,6 @@ gem 'draper'
 gem 'decent_decoration'
 gem 'decent_exposure'
 gem 'haml'
-gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'haml-rails'
 gem 'high_voltage'
@@ -53,7 +50,6 @@ group :production do
   gem 'rails_12factor'
 end
 group :test do
-  gem 'capybara'
   gem 'database_cleaner'
   gem 'launchy'
   gem 'selenium-webdriver'
