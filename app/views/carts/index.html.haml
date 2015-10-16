@@ -3,7 +3,7 @@
 %table
   %thead
     %tr
-      %th City
+      %th City name
       %th
       %th
       %th
@@ -11,7 +11,7 @@
   %tbody
     - @carts.each do |cart|
       %tr
-        %td= cart.city_id
+        %td= cart.name
         %td= link_to 'Show', cart
         %td= link_to 'Edit', edit_cart_path(cart)
         %td= link_to 'Destroy', cart, :method => :delete, :data => { :confirm => 'Are you sure?' }
