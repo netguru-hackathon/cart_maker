@@ -31,6 +31,7 @@ gem 'high_voltage'
 gem 'pg'
 gem 'simple_form'
 group :development do
+  gem 'letter_opener'
   gem 'better_errors'
   gem 'guard-bundler'
   gem 'guard-rails'
