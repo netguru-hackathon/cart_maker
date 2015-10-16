@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: 'user/registrations' }
 
   namespace :api do
-    post :update, as: "add_product", to: "carts_controller#update"
+    post :update, as: "add_product", to: "carts#update"
   end
 end
