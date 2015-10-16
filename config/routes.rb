@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   resources :carts
   resources :products
   resources :cities
-  devise_for :users
+  devise_for :users, controllers: { registrations: 'user/registrations' }
   root to: 'visitors#index'
 end
