@@ -19,7 +19,6 @@ module Api
 
       @cart_product = CartProduct.new
       @cart_product.cart_id = @cart.id
-      @cart_product.product_id = @product.id
       @cart_product.quantity = params[:product_amount]
       @cart_product.save
       render json: @cart_product

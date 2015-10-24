@@ -14,7 +14,6 @@
     - @cart_products.each do |cart_product|
       %tr
         %td= cart_product.cart_id
-        %td= cart_product.product_id
         %td= cart_product.quantity
         %td= link_to 'Show', cart_product
         %td= link_to 'Edit', edit_cart_product_path(cart_product)
