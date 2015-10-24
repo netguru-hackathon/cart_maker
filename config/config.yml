@@ -1,0 +1,8 @@
+development: &default
+  secret_key_base: 565a1bd5f33bbdd88e812899a3de9ead5449a51a3cc9a7fd4e52d717994a4d5588e83b4e20773302b000851498248891585efe6fd3e39576861dd5e29b220ff9
+
+test:
+  <<: *default
+
+production:
+  <<: *default
