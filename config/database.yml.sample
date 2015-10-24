@@ -2,19 +2,19 @@ development:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: hackaton_development
+  database: cartmaker_development
   pool:     5
 
 test:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: hackaton_test
+  database: cartmaker_test
   pool:     5
 
 production:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: hackaton_production
+  database: cartmaker_production
   pool:     5
