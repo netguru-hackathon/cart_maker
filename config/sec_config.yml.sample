@@ -1,0 +1,7 @@
+cartbotsy:
+  api_token: 'some-token'
+  webhook_token: 'some-token2'
+  app_url: 'url to app'
+  available_cities:
+    - city1
+    - city2
