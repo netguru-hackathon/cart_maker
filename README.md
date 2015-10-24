@@ -34,6 +34,9 @@ Getting Started
 Documentation and Support
 -------------------------
 
+We are using annotate gem after running new migration please do:
+```annotate --exclude tests,fixtures,factories,serializers```
+
 Issues
 -------------
 
