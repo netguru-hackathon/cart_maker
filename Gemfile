@@ -27,6 +27,8 @@ gem 'haml-rails'
 gem 'high_voltage'
 gem 'pg'
 gem 'simple_form'
+gem 'cartbotsy', git: 'https://github.com/siepet/cartbotsy'
+
 group :development do
   gem 'letter_opener'
   gem 'better_errors'
