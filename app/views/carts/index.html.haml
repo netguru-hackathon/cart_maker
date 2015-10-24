@@ -14,6 +14,7 @@
         %td= cart.name
         %td= link_to 'Show', cart
         %td= link_to 'Edit', edit_cart_path(cart)
+        %td= link_to 'Add PRODUCTS', add_products_cart_path(cart)
         %td= link_to 'Destroy', cart, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br

@@ -1,5 +1,6 @@
 class CartsController < ApplicationController
   before_action :set_cart, only: [:show, :edit, :update, :destroy]
+  expose(:cart)
 
   # GET /carts
   # GET /carts.json
@@ -19,6 +20,9 @@ class CartsController < ApplicationController
 
   # GET /carts/1/edit
   def edit
+  end
+
+  def add_products
   end
 
   # POST /carts
