@@ -1,6 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require "rails"
+require "konf"
 # Pick the frameworks you want:
 require "active_model/railtie"
 require "active_job/railtie"
@@ -10,7 +11,7 @@ require "action_mailer/railtie"
 require "action_view/railtie"
 require "sprockets/railtie"
 # require "rails/test_unit/railtie"
-
+require_relative 'preinitializer'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)

@@ -27,6 +27,7 @@ gem 'haml-rails'
 gem 'high_voltage'
 gem 'pg'
 gem 'simple_form'
+gem 'konf'
 gem 'cartbotsy', git: 'https://github.com/siepet/cartbotsy'
 
 group :development do
