@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/siepet/cartbotsy
-  revision: 5356a98f5ed0c73b2443b370193ca022316425b3
+  revision: 823427f825341dc62e5226691f011df644cd175c
   specs:
-    cartbotsy (0.0.6)
+    cartbotsy (0.0.8)
       git
       httmultiparty
       httparty
