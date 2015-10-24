@@ -29,6 +29,7 @@ gem 'pg'
 gem 'simple_form'
 gem 'konf'
 gem 'cartbotsy', git: 'https://github.com/siepet/cartbotsy'
+gem 'materialize-sass'
 
 group :development do
   gem 'letter_opener'
