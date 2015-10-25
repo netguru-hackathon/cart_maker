@@ -11,4 +11,9 @@
 
 class Cart < ActiveRecord::Base
   belongs_to :city
+  has_many :cart_products
+
+  def products
+    self.cart_products
+  end
 end

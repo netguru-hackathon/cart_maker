@@ -13,4 +13,13 @@
 
 class CartProduct < ActiveRecord::Base
   belongs_to :cart
+
+  def image
+    return photo_url if photo_url.present?
+    "http://placehold.it/100x100"
+  end
+
+  def bulk_price
+    "#{quantity * 2} zł"
+  end
 end
