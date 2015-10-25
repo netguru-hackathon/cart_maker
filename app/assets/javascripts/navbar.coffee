@@ -1,2 +1,4 @@
 $ ->
-  $(".dropdown-button").dropdown()
+  $(".dropdown-button").dropdown({
+    belowOrigin: true
+  })
