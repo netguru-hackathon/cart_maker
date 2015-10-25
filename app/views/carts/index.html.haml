@@ -14,7 +14,7 @@
           %a.tooltipped{href: add_products_cart_path(cart), data: { tooltip: 'Add product to cart'} }
             %i.material-icons
               add
-          %a.tooltipped{href: cart_path(cart), data: { method: 'delete', tooltip: 'Delete cart' } }
+          %a.tooltipped.delete-cart{href: cart_path(cart), data: { method: 'delete', tooltip: 'Delete cart' } }
             %i.material-icons
               remove
 
