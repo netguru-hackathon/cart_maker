@@ -1,7 +1,31 @@
 %p
-  %b Cart name:
-  = @cart.name
+  %h5
+    Showing products for cart:
+    = @cart.name
 
-= link_to 'Edit', edit_cart_path(@cart)
-\|
-= link_to 'Back', carts_path
+%ul.collection.highlight
+  - @cart.products.each do |product|
+    %li.collection-item.avatar
+      %img{'src': product.image, 'alt': product.name, 'class': 'circle'}
+      %span.title
+        = product.name
+      %p
+        Quantity:
+        %span.product-quantity
+          = product.quantity
+        %br
+        Price:
+        %span.product-price
+          = product.bulk_price
+      %a{'href': '#!', 'class': 'secondary-content'}
+        %i.material-icons.inc-product
+          add
+        %i.material-icons.dec-product
+          remove
+
+%p
+  %h6.right-align
+    %button.btn.waves-effect.waves-light.sync-btn
+      Sync
+      %i.material-icons.right
+        send
