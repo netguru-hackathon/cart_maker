@@ -1,22 +1,26 @@
-%h1 Listing carts
+%h5 Available carts:
 
-%table
+%table.highlight
   %thead
     %tr
       %th City name
-      %th
-      %th
-      %th
+      %th Actions
 
   %tbody
     - @carts.each do |cart|
       %tr
-        %td= cart.name
-        %td= link_to 'Show', cart
-        %td= link_to 'Edit', edit_cart_path(cart)
-        %td= link_to 'Add PRODUCTS', add_products_cart_path(cart)
-        %td= link_to 'Destroy', cart, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to cart.name, cart
+        %td
+          %a{href: add_products_cart_path(cart)}
+            %i.material-icons
+              add
+          %a{href: add_products_cart_path(cart), 'data-method': 'delete', href: cart_path(cart)}
+            %i.material-icons
+              remove
 
 %br
 
-= link_to 'New Cart', new_cart_path
+%a.btn.waves-effect.waves-light{href: new_cart_path}
+  Create new cart
+  %i.material-icons.right
+    send

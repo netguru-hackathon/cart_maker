@@ -1,5 +1,21 @@
-%h1 New cart
+%h5 Add new cart!
 
-= render 'form'
+%form{class: 'new-cart-form', method: 'post', action: carts_path}
+  %input{type: 'hidden', name: 'authenticity_token', value: form_authenticity_token}
+  .input-field
+    %input{type: 'text', id: 'cart-name', name: 'cart[name]'}
+    %label{class: 'active', for: 'cart-name'}
+      Cart name:
+  .input-field
+    %select{name: 'city', class: 'city-select'}
+      - City.all.each do |city|
+        %option{value: city.id, selected: (current_user.city.id == city.id)}
+          = city.region_name.capitalize
+    %label
+      City
+  .input-field
+    %button.btn.waves-effect.waves-light.add-cart-btn{type: 'submit'}
+      Add cart
+      %i.material-icons.right
+        send
 
-= link_to 'Back', carts_path
