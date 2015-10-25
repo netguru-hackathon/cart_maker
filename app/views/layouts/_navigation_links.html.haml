@@ -1,6 +1,6 @@
 - if current_user
   %li
-    %a= current_user.city.region_name
+    %a= current_user.city.region_name.capitalize
   %ul.dropdown-content{id: 'dropdown'}
     %li
       = link_to 'All carts', '#'
