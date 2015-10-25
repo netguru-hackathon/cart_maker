@@ -11,10 +11,10 @@
       %tr
         %td= link_to cart.name, cart
         %td
-          %a{href: add_products_cart_path(cart)}
+          %a.tooltipped{href: add_products_cart_path(cart), data: { tooltip: 'Add product to cart'} }
             %i.material-icons
               add
-          %a{href: add_products_cart_path(cart), 'data-method': 'delete', href: cart_path(cart)}
+          %a.tooltipped{href: cart_path(cart), data: { method: 'delete', tooltip: 'Delete cart' } }
             %i.material-icons
               remove
 
