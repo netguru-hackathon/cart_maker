@@ -7,6 +7,8 @@
 #  quantity   :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  name       :string
+#  photo_url  :string
 #
 
 class CartProduct < ActiveRecord::Base
