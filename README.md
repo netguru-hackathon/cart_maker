@@ -51,3 +51,4 @@ Credits
 
 License
 -------
+MIT
