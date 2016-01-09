@@ -18,15 +18,12 @@ Your application contains diagnostics in the README file. Please provide a copy 
 If the application doesn't work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
 and include the diagnostics.
 
-Ruby on Rails
+Stack
 -------------
 
-This application requires:
-
-- Ruby 2.2.2
+- Ruby 2.3.0
 - Rails 4.2.4
 
-Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
 
 Getting Started
 ---------------
